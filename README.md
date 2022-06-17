@@ -1,6 +1,8 @@
 # docker-php
 
-image: keltuo/php:8-cli
+image: keltuo/php:8.1-cli
+
+image: keltuo/php:8-cli  (8.0)
 
 image: keltuo/php:7.4-cli
 
@@ -15,7 +17,7 @@ version: "3"
 services:
   php:
     container_name: php-sm
-    image: keltuo/php:8-cli
+    image: keltuo/php:8.1-cli
     volumes:
       - ./:/var/www/
     command: bash -c "php /var/www/vendor/phpunit/phpunit/phpunit --configuration /var/www/phpunit.xml"

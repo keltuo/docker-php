@@ -1,4 +1,4 @@
-FROM php:8.0-cli
+FROM php:8.1-cli
 ENV TZ=Europe/Prague
 
 RUN apt-get update -yqq
